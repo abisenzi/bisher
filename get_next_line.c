@@ -1,12 +1,4 @@
-int  main(void)
-{
-  char *s = "Hola Mundo!";
-  printf (%s, s);
-  return (0);
-
-}
-
-#include <stdio.h>
+#include <stdio>
 
 int	ft_putstr(char *s)
 {
