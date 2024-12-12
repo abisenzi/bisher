@@ -1,4 +1,6 @@
-int  main(void)
+#include <stdio.h>
+
+int	main(void)
 {
   char *s = "Hola Mundo!";
   printf (%s, s);
@@ -24,6 +26,19 @@ int	ft_putstr(char *s)
 		if (write(1, &s[i], 1) != 1)
 			return (-1);
 		i++;
+	}
+	return (i);
+}
+
+int	ft_putstr(char *str)
+{
+	int	i;
+
+	i = 0;
+	while (!str)
+	{
+		i++;
+		str--;
 	}
 	return (i);
 }
